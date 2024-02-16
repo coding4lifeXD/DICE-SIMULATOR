@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dice Simulator</h1>
+    <hr />
+    <h2>Choose a simulation option</h2>
+
+    <select id="selector">
+      <option value="roll1">Roll Dice Once</option>
+      <option value="roll5">Roll Dice 5 Times</option>
+      <option value="rollX">Roll Dice X Times</option>
+      <option value="rollSnakeEyes">Roll Dice Until Snake Eyes</option>
+    </select>
+    <p>
+      <button id="rollBtn">Roll</button>
+      <button id="resetBtn">Reset</button>
+    </p>
+    <div>
+      <img id="img1" src="0.png" />
+      <img id="img2" src="0.png" />
+    </div>
+    <div id="diceRollsOut"><h3>Dice Rolls</h3></div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
