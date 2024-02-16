@@ -109,8 +109,8 @@ rollBtn.addEventListener("click", () => {
 function display() {
   for (let i = indexStart; i < diceRollArray.length; i++) {
     diceRollOutput.innerHTML += `<span>${diceRollArray[i]}</span>`;
-    img1.src = `/${diceRollArray[i].charAt(0)}.png`;
-    img2.src = `/${diceRollArray[i].charAt(2)}.png`;
+    img1.src = `${diceRollArray[i].charAt(0)}.png`;
+    img2.src = `${diceRollArray[i].charAt(2)}.png`;
     indexStart++;
   }
 }
