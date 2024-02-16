@@ -48,8 +48,8 @@ function spinDice() {
   }
   img1.style.transform = `rotate(${imgDeg}deg)`;
   img2.style.transform = `rotate(${imgDeg}deg)`;
-  img1.src = `/${imgSrc}.png`;
-  img2.src = `/${imgSrc}.png`;
+  img1.src = `${imgSrc}.png`;
+  img2.src = `${imgSrc}.png`;
   imgSrc += 1;
   imgDeg += 10;
 }
@@ -66,8 +66,8 @@ resetBtn.addEventListener("click", () => {
   spinInterval = setInterval(spinDice, 100);
   indexStart = 0;
   diceRollArray = [];
-  img1.src = `/0.png`;
-  img2.src = `/0.png`;
+  img1.src = `0.png`;
+  img2.src = `0.png`;
   diceRollOutput.innerHTML = `<h3>Dice Rolls</h3>`;
 });
 
